@@ -1,10 +1,17 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { Solutions } from './pages/solutions/organoids/solutions';
+import { Input } from './pages/Input/Organoids/Input';
+import { Solutions } from './pages/Solutions/Organoids/Solutions';
 
 function App() {
   return (
     <div className="App">
-     <Solutions/>
+      <div className="App__Actual">
+        <Routes>
+          <Route path={"/Solutions"} element={<Solutions />} />
+          <Route path={"/Input"} element={<Input />} />
+        </Routes>
+      </div>
     </div>
   );
 }

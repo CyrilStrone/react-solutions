@@ -1,16 +1,16 @@
-.Solutions__List{
+.SolutionsList{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.Solutions__List__Item{
+.SolutionsList__Item{
     width: 800px;
     max-height: 1200px;
     display: flex;
     flex-direction: column;
 }
-.Solutions__List__Item__Title{
+.SolutionsList__Item__Title{
 
 }

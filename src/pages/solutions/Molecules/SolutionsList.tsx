@@ -1,14 +1,14 @@
 import { CodeBlock } from "react-code-blocks"
-import { SolutionList } from "../../../code-blocks/solution-list"
-import "../styles/solutions-list.css"
+import { SolutionList } from "../../../CodeBlocks/SolutionList"
+import "../Styles/SolutionsList.css"
 
 export const List = () => {
     return (
-        <div className="Solutions__List">
+        <div className="SolutionsList">
             {
                 SolutionList.map((item: any) =>
-                    <div className="Solutions__List__Item">
-                        <div className="Solutions__List__Item__Title">{item.text}</div>
+                    <div className="SolutionsList__Item">
+                        <div className="SolutionsList__Item__Title">{item.text}</div>
                         <CodeBlock
                             text={item.code}
                             language={'typescript'}
